@@ -32,8 +32,10 @@ The table generator is O(n^2)
 My sources state that O(n^2) is the larger than O(log n)(log log n)
 
 Therefore, the table generation dominates the problem.
-My code doesn't scale very well. Perhaps my sieve code could be tweaked to save the products as it goes along. The algorithm is already calculating multiples.
------------------------------------------------------------------
+
+The code doesn't scale very well, due to the table generation being O(n^2) . I believe there is no way around this.
+
+
 *Coding challenge*
 
 Objective
