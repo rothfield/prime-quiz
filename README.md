@@ -22,9 +22,13 @@ specify the number of primes you want and the code "lazily" fills in the multipl
 *Test Results*
 
 Generated 100000 primes in 3.997334241 seconds
+
 Generated 1000000 primes in 70.040366216 seconds
+
 Generated 1000 primes plus table in 0.636984514 seconds
+
 Generated 5000 primes plus table in 16.971695681 seconds
+
 
 *Discussion of test results*
 
