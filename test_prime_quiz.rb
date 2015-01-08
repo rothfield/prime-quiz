@@ -23,12 +23,10 @@ class TestPrimeQuiz < Minitest::Test
 		end
 
 		def test_generate_and_create_table_for_thousand_primes
-				puts "testing 1,000 with table generation"
 				prime_generation_and_table_generation_timer(1000)
 		end
 
 		def test_generate_and_create_table_for_five_thousand_primes
-				puts "testing 5,000 with table generation"
 				prime_generation_and_table_generation_timer(5 * 1000)
 		end
 

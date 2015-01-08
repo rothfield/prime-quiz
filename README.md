@@ -1,54 +1,44 @@
-To run: 
+*Coding Challenge*
+
+Write a program to generate a multiplication table of prime numbers
+
+*To run:*
 
 ruby main.rb 4                                                                             
-
-To test:
+*To test:*
 
 ruby test_prime_quiz.rb
 
-
 *Discussion*
 
-
 I used the following as reference for creating an incremental sieve.
+The incremental sieve differs from the traditional sieve in that you can
+specify the number of primes you want and the code "lazily" fills in the multiples as needed. With the traditional you choose the sieve size and aren't guaranteed a particular number of primes
 
 [http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf]
 
-My timing tests for prime generation ONLY
+*Test Results*
 
-Generated 1000 * 1000 primes in 92.026719947 seconds
-Generated 100 * 1000 primes in 18.000957512 seconds
+Generated 100000 primes in 3.997334241 seconds
+Generated 1000000 primes in 70.040366216 seconds
+Generated 1000 primes plus table in 0.636984514 seconds
+Generated 5000 primes plus table in 16.971695681 seconds
 
+*Discussion of test results*
 
-I ran some tests for multiplication table generation:
-
-time ruby main.rb 1000 > /dev/null
-
-ruby main.rb 1000 > /dev/null  0.69s user 0.04s system 95% cpu 0.770 total
-
-[john@debian:~/prime-quiz ]$ time ruby main.rb 10000 > /dev/null
-ruby main.rb 10000 > /dev/null  66.10s user 0.05s system 99% cpu 1:06.35 total
-
-Results:
-
-1,000  =>  0.69s user 0.04s system 95% cpu 0.770 total
-
-10,000 => 66.10s user 0.05s system 99% cpu 1:06.35 total
-
-Conclusion: The table generation is dominating and is of order O(nsquared) as expected. The literature states that the sieve is 
+The table generation is dominating and is of order O(nsquared) as expected. The literature states that the sieve is 
 
 O(log n)(log log n)
 
 The table generator is O(n^2)
 
-My sources state that O(n^2) is the larger than O(log n)(log log n)
+O(n^2) is larger than O(log n)(log log n) 
 
-Therefore, the table generation dominates the problem.
+So table generation dominates the problem.
 
-The code doesn't scale very well, due to the table generation being O(n^2) . I believe there is no way around this.
+The code doesn't scale very well, due to the table generation being O(n^2) . I see no way around this.
 
-
-*Coding challenge*
+*Text of Coding challenge*
 
 Objective
 Write a program that prints out a multiplication table of the ﬁrst 10 prime
@@ -65,11 +55,4 @@ Notes
 • Do not use the Prime class from stdlib (write your own code).
 • Write tests. Try to demonstrate TDD/BDD.
 
-When you’re done
-Put your code on GitHub or email us a zip/tarball.
 
-Thanks!
-
-1
-
-
