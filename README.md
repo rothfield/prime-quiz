@@ -1,3 +1,15 @@
+To run: 
+
+ruby main.rb 4                                                                             
+
+To test:
+
+ruby test_prime_quiz.rb
+
+
+*Discussion*
+
+
 I used the following as reference for creating an incremental sieve.
 
 [http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf]

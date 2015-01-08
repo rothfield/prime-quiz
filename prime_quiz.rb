@@ -33,11 +33,13 @@ end
 
 def quiz_main(target)
 		x=generate_primes(target)
-		puts generate_multiplication_table(x)
+		generate_multiplication_table(x)
+		""
 end
 
 def generate_multiplication_table(ary)
-		# generate a multiplication table for the given array
+		# generate a multiplication table, tab separated for the given array
+		# Writes to stdout
 		header= [""] + ary
 		puts header.join("\t")
 		ary.each do |x|
