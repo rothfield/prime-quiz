@@ -5,17 +5,19 @@ Write a program to generate a multiplication table of prime numbers
 *To run:*
 
 ruby main.rb 4                                                                             
+
 *To test:*
 
 ruby test_prime_quiz.rb
+
 
 *Discussion*
 
 I used the following as reference for creating an incremental sieve.
 The incremental sieve differs from the traditional sieve in that you can
-specify the number of primes you want and the code "lazily" fills in the multiples as needed. With the traditional you choose the sieve size and aren't guaranteed a particular number of primes
+specify the number of primes you want and the code "lazily" fills in the multiples as needed. With the traditional sieve you choose the sieve size and aren't guaranteed a particular number of primes
 
-[http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf]
+[The Genuine Sieve of Eratosthenes](http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf)
 
 *Test Results*
 
