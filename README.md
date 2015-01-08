@@ -1,4 +1,4 @@
-*Coding Challenge*
+#Coding Challenge#
 
 Write a program to generate a multiplication table of prime numbers
 
@@ -6,12 +6,12 @@ Write a program to generate a multiplication table of prime numbers
 
 ruby main.rb 4                                                                             
 
-*To test:*
+##To test:##
 
 ruby test_prime_quiz.rb
 
 
-*Discussion*
+##Discussion##
 
 I used the following as reference for creating an incremental sieve.
 The incremental sieve differs from the traditional sieve in that you can
@@ -19,7 +19,7 @@ specify the number of primes you want and the code "lazily" fills in the multipl
 
 [The Genuine Sieve of Eratosthenes](http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf)
 
-*Test Results*
+##Test Results##
 
 Generated 100000 primes in 3.997334241 seconds
 
@@ -30,7 +30,7 @@ Generated 1000 primes plus table in 0.636984514 seconds
 Generated 5000 primes plus table in 16.971695681 seconds
 
 
-*Discussion of test results*
+##Discussion of test results##
 
 The table generation is dominating and is of order O(nsquared) as expected. The literature states that the sieve is 
 
@@ -44,7 +44,7 @@ So table generation dominates the problem.
 
 The code doesn't scale very well, due to the table generation being O(n^2) . I see no way around this.
 
-*Text of Coding challenge*
+##Text of Coding challenge##
 
 Objective
 Write a program that prints out a multiplication table of the ﬁrst 10 prime
